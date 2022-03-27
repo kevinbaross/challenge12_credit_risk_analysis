@@ -46,8 +46,6 @@ The following bulleted list describes the balanced accuracy scores and the preci
 
 ![Model Summary](model_summary_12.png)
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+From the summary table above, it can be seen that the over-sampling method does a better job at categorizing the loan than the original model. Even though the precision and recall scores are the same for both method in categorizing non-defaulted loans. the over-sampling method does a better job at categorizing the defaulted loans.
 
-If you do not recommend any of the models, please justify your reasoning.
+In addition to use this machine learning method, it would also take a look at the percentage of loan payment as an outcome variable and see whether each of the explanation variables are significant in contributing to the percentage of loan payment. For example, if both borrowers borrow $1,000, we want to loan to those who can pay up $1,000 more quickly than those who take longer time to pay. By using this machine learning method alone, it is hard to see other dimension of the problem, e.g. how likely the loan will be defaulted (from 0% to 100%) rather than seeing it as a binary (0 and 1)
