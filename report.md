@@ -25,7 +25,7 @@ The following bulleted list describes the balanced accuracy scores and the preci
  
   * Recall scores = 99% for non-defaulted loan and 91% for defaulted loan
   
-  The recall score measures the number of actually defaulted loan that the model correctly classified as default. It is calculated by dividing true positive by the sum of true positive and false negative.
+  The recall score measures the number of actually defaulted loan that the model correctly classified as default. It is calculated by dividing true positive by the sum of true positive and false negative. With the non-defaulted loan, we can see that the model coorectly predicted 99% of the instances, whereas such figure is only 91% for the defaulted one.
   
   Explanation 1
   
@@ -40,7 +40,7 @@ The following bulleted list describes the balanced accuracy scores and the preci
   
   * Recall scores = 99% for non-defaulted loan and 99% for defaulted loan
   
-  Explanation 1
+  As mentioned, the recall score inducates the number of actually defaulted loan that the model correctly classified as default. The model did a better job after oversampling method has been applied as the recall scores are 99% for both non-defaulted loan and defaulted one.
 
 ## Summary
 
