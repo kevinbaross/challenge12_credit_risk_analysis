@@ -12,15 +12,35 @@ From this dataset, the first step is to divide it into training and testing data
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+The following bulleted list describes the balanced accuracy scores and the precision and recall scores of all machine learning models used in the analysis.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Machine Learning Model 1 (original method):
+  * Accuracy score = 95%
+  
+  The accuracy of 95% indicated tested data were accurately identified (as default or non-default) by the model.
+  
+  * Precision score = 100% for non-defaulted loan and 85% for defaulted loan
+ 
+  This precision score measures how confident we are that the model made the positive prediction. It divides the true positive by the sum of true positive and false positive. For this case, almost all the data (>99.9%) that were predicted as true were actually true. However, only 85% of the loans that were predicted as default are actually defaulted.
+ 
+  * Recall scores = 99% for non-defaulted loan and 91% for defaulted loan
+  
+  The recall score measures the number of actually defaulted loan that the model correctly classified as default. It is calculated by dividing true positive by the sum of true positive and false negative.
+  
+  Explanation 1
+  
+* Machine Learning Model 2 (oversampling method):
+  * Accuracy score = 99%
+ 
+  The accuracy of 99% indicated tested data were accurately identified (as default or non-default) by the model.
+ 
+  * Precision score = 100% for non-defaulted loan and 84% for defaulted loan
+  
+  As explained above, the precision score measures how confident we are that the model made the positive prediction. After the oversampling method has been applied, the result of the precision does not change much, though the precision score for the defaulted loan reduces from 85% to 84%.
+  
+  * Recall scores = 99% for non-defaulted loan and 99% for defaulted loan
+  
+  Explanation 1
 
 ## Summary
 
